@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>BACKTRACKING</title>
+       <link rel="stylesheet" href="exeternal.css">
+       <link rel ="stylesheet" href="ext.css">
+       <style>
+           body{
+               background-color: aqua
+           }
+           label{
+               font-size: 30px; 
+           }
+        </style>   
+     </head>
+   <body><h1>Backtracking</h1>
+    <p>Copyright ©2002 by David Matuszek</p>
+    <p>Backtracking is a form of recursion</p>
+    
+    <p>The usual <em>scenario</em> is that you are faced with a <i>number</i> of options, <strong>and</strong> you must choose one of these. After you make your choice you will get a new set of options; just what set of options you get depends on what choice you made. This procedure is repeated over and over until you reach a final state. If you made a good sequence of choices, your final state is a goal state; if you didn't, it isn't.</p>
+    <p>Conceptually, you start at the <ins>root</ins>of a tree; the <del>tree</del> probably has some good leaves and some bad leaves, though it may be that the leaves are all good or all bad. You want to get to a good leaf. At each node, beginning with the root, you choose one of its children to move to, and you keep this up until you get to a leaf.</p>
+        
+    <p>Suppose you get to a bad leaf. <strike>You can backtrack to continue the search for a good leaf</strike> by <sup>revoking</sup> your most recent choice, and trying out the next option in that set of options. If you run out of options, revoke the choice that got you here, and try another choice at that node. If you end up at the root with no options left, there are no good leaves to be found.</p>    
+    
+    <p>This needs an example.</p>
+    
+    <img src="treesearch.gif"  />
+    <br/>
+    
+    <hr>
+    
+    <ol>
+        <li>Starting at Root, your options are A and B. You choose A.</li>
+        <li>At A, your options are C and D. You choose C.</li>
+        <li>C is bad. Go back to A.</li>
+        <li>At A, you have already tried C, and it failed. Try D.</li>
+        <li>D is bad. Go back to A</li>
+        <li>At A, you have no options left to try. Go back to Root.</li>
+        <li>At Root, you have already tried A. Try B.</li>
+        <li>At B, your options are E and F. Try E.</li>
+        <li>E is good. Congratulations!</li>
+    </ol>
+    
+    <p>in this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices we could make. There is also a data structure called a tree, but usually we don't have a data structure to tell us what choices we have. (If we do have an actual tree data structure, backtracking on it is called depth-first tree searching.)</p>
+    
+    <h2>The backtracking algorithm.</h2>
+    
+    
+    
+    <pre>Here is the algorithm (in pseudocode) for doing backtracking from a given node n:
+    
+        boolean solve(Node n) {
+            if n is a leaf node {
+                if the leaf is a goal node, return true
+                else return false
+            } else {
+                for each child c of n {
+                    if solve(c) succeeds, return true
+                }
+                return false
+            }
+        }
+    
+    </pre>
+
+
+           
+    
+    <pre> int main(){
+        int a;
+        int b;
+         sum =a+b;
+         }
+    
+    </pre> 
+    
+    
+    <table border="1px" cellpading="10px" cellspace="10px" align="center">
+        <thead>
+          <tr>
+            <th></th>
+            <th>2 by 3 map</th>
+            <th>3 by 3 map</th>
+            <th>3 by 4 map</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Method 1:</td>
+                <td>60 ms.</td>
+                <td>90 ms.</td>
+                <td>60530 ms. (1 minute)</td>
+            </tr>
+            <tr>
+                <td>Method 2:</td>
+                <td>0 ms.</td>
+                <td>0 ms.</td>
+                <td>0 ms.</td>
+            </tr>
+        </tbody>
+
+    </table></table>
+
+
+    this is a  comme
+
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ul_EM2xL_i4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+
+
+
+    
+    <a herf="https://www.google.com/">move to google</a>
+    <a href="author.html">about the author</a>
+    <a href="https://www.prepbytes.com/">checkout the linl</a>
+    
+    
+    
+    
+    
+    
+    
+    <p>Notice that the algorithm is expressed as a boolean function. This is essential to understanding the algorithm. If solve(n) is true, that means node n is part of a solution--that is, node n is one of the nodes on a path from the root to some goal node. We say that n is solvable. If solve(n) is false, then there is no path that includes n to any goal node.</p>
+ </body>
+ <forms>
+     <fieldset>
+         <legend>login form</legend>
+     <label id="usernamelabel">username</label>
+     <br>
+     <input type="text" id="username" value="saitm">
+     <br>
+
+
+
+     <label>password</label>
+     <br>
+     <input text="text" value="default pass" id="password" style="color:rgb(100, 212, 36)">
+     </fieldset>
+     <label class="redcolor  fontType">are you sure</label>
+     <input type ="checkbox">
+     <br>
+     <input type="button" value="submit">
+
+     <br>
+     <label id ="password">password</label>
+     <div style="background-color:brown;"> this is div 1</div>
+     <div>this is a div 1</div>
+     <div>this is a  div 2</div>
+     <textarea>text</textarea>
+
+     <span style="background-color:rgb(255, 64, 6)">rhis is span 1</span>
+     <span>this is span 2</span>
+     </forms>
+</html>
+
+
+
+

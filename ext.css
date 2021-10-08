@@ -1,0 +1,18 @@
+label{
+    color: yellow ! important;
+}
+#password{
+    color:thistle!important;
+}
+#are you sure{
+    color:blue!important;
+}
+.redcolor{
+    color:brown!important;
+    background-color: chartreuse!important;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+.fontType{
+    font-size:30px;
+}

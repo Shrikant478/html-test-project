@@ -2,9 +2,16 @@ label{
     color: yellow ! important;
 }
 #password{
-    color:thistle!important;
+
+    color: aliceblue!important;
+    border: solid;
+    border-radius: 40px;
 }
+
 #are you sure{
+    text-decoration-line: line-through;
+    text-decoration-color: black;
+    text-decoration-style: dashed;
     color:blue!important;
 }
 .redcolor{
@@ -12,7 +19,23 @@ label{
     background-color: chartreuse!important;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 50px;
+    font-style: italic;
+    margin-left: 31px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-decoration-line: line-through;
+    text-decoration-color: black;
+    text-decoration-style: dashed;
+    font-size: xx-large;
+    block-size: inherit;
+    border-bottom: indigo;
+    border-style: double;
+    border-width: initial;
+    border-left-color: cadetblue;
 }
 .fontType{
     font-size:30px;
+}
+.name{
+    font-style: black;
 }
